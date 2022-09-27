@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import 'src/assets/styles/variable.scss';
+
+
+/* Importing Datepicker SCSS file. */
+@import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+body{
+    $base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+font-family: ui-sans-serif;
+
+}
+body.dark-theme{
+    $base-color: #c6538c;
+    $border-dark: rgba($base-color, 0.88);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body.light-theme{
+    $base-color: #c6538c;
+    $border-dark: rgba($base-color, 0.88);
+}
+.box-shadow{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.back-default{
+    background:var(--secondry-background-color);
+}
+.back-secondry{
+background:var(--base-background-color);
+}
